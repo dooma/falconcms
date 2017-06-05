@@ -13,7 +13,7 @@
             parent: 'entity',
             url: '/review',
             data: {
-                authorities: ['ROLE_USER'],
+                authorities: ['ROLE_PARTICIPANT'],
                 pageTitle: 'falconcmsApp.review.home.title'
             },
             views: {
@@ -36,7 +36,7 @@
             parent: 'review',
             url: '/review/{id}',
             data: {
-                authorities: ['ROLE_USER'],
+                authorities: ['ROLE_PARTICIPANT'],
                 pageTitle: 'falconcmsApp.review.detail.title'
             },
             views: {
@@ -69,7 +69,7 @@
             parent: 'review-detail',
             url: '/detail/edit',
             data: {
-                authorities: ['ROLE_USER']
+                authorities: ['ROLE_PARTICIPANT']
             },
             onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                 $uibModal.open({
@@ -94,7 +94,7 @@
             parent: 'review',
             url: '/new',
             data: {
-                authorities: ['ROLE_USER']
+                authorities: ['ROLE_PARTICIPANT']
             },
             onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                 $uibModal.open({
@@ -122,7 +122,7 @@
             parent: 'review',
             url: '/{id}/edit',
             data: {
-                authorities: ['ROLE_USER']
+                authorities: ['ROLE_PARTICIPANT']
             },
             onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                 $uibModal.open({
@@ -147,7 +147,7 @@
             parent: 'review',
             url: '/{id}/delete',
             data: {
-                authorities: ['ROLE_USER']
+                authorities: ['ROLE_PARTICIPANT']
             },
             onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                 $uibModal.open({

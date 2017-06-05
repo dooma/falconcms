@@ -5,6 +5,7 @@ import com.falcon.cms.domain.User;
 import com.falcon.cms.repository.AuthorityRepository;
 import com.falcon.cms.repository.UserRepository;
 
+import com.falcon.cms.security.AuthoritiesConstants;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -94,7 +95,7 @@ public class SocialService {
         String login = getLoginDependingOnProviderId(userProfile, providerId);
         String encryptedPassword = passwordEncoder.encode(RandomStringUtils.random(10));
         Set<Authority> authorities = new HashSet<>(1);
-        authorities.add(authorityRepository.findOne("ROLE_USER"));
+        authorities.add(authorityRepository.findOne(AuthoritiesConstants.PARTICIPANT));
 
         User newUser = new User();
         newUser.setLogin(login);
