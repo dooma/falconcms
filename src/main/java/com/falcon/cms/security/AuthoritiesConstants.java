@@ -9,7 +9,7 @@ public final class AuthoritiesConstants {
 
     public static final String ORGANIZER = "ROLE_ORGANIZER";
 
-    public static final String ACTOR = "ROLE_ACTOR";
+    public static final String AUTHOR = "ROLE_AUTHOR";
 
     public static final String PARTICIPANT = "ROLE_PARTICIPANT";
 
