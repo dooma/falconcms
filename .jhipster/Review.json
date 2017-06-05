@@ -1,0 +1,36 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "reviewer",
+            "otherEntityName": "organizer",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "review"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "paper",
+            "otherEntityName": "paper",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "review"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "mark",
+            "fieldType": "Mark",
+            "fieldValues": "STRONG_ACCEPT,ACCEPT,WEAK_ACCEPT,BORDERLINE_PAPER,WEAK_REJECT,REJECT,STRONG_REJECT",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "changelogDate": "20170605142538",
+    "entityTableName": "review",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl"
+}

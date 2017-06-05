@@ -1,0 +1,43 @@
+
+<div>
+    <h2><span data-translate="falconcmsApp.organizer.detail.title">Organizer</span> {{vm.organizer.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="falconcmsApp.organizer.name">Name</span></dt>
+        <dd>
+            <span>{{vm.organizer.name}}</span>
+        </dd>
+        <dt><span data-translate="falconcmsApp.organizer.affiliation">Affiliation</span></dt>
+        <dd>
+            <span>{{vm.organizer.affiliation}}</span>
+        </dd>
+        <dt><span data-translate="falconcmsApp.organizer.email">Email</span></dt>
+        <dd>
+            <span>{{vm.organizer.email}}</span>
+        </dd>
+        <dt><span data-translate="falconcmsApp.organizer.web">Web</span></dt>
+        <dd>
+            <span>{{vm.organizer.web}}</span>
+        </dd>
+        <dt><span data-translate="falconcmsApp.organizer.user">User</span></dt>
+        <dd>
+            {{vm.organizer.userId}}
+        </dd>
+        <dt><span data-translate="falconcmsApp.organizer.conference">Conference</span></dt>
+        <dd>
+            <a ui-sref="conference-detail({id:vm.organizer.conferenceId})">{{vm.organizer.conferenceId}}</a>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="organizer-detail.edit({id:vm.organizer.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

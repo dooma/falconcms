@@ -1,0 +1,66 @@
+<div>
+    <h2 data-translate="falconcmsApp.paper.home.title">Papers</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="paper.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span  data-translate="falconcmsApp.paper.home.createLabel">
+                        Create new Paper
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr>
+                    <th><span data-translate="global.field.id">ID</span></th>
+                    <th><span data-translate="falconcmsApp.paper.name">Name</span></th>
+                    <th><span data-translate="falconcmsApp.paper.description">Description</span></th>
+                    <th><span data-translate="falconcmsApp.paper.keywords">Keywords</span></th>
+                    <th><span data-translate="falconcmsApp.paper.metaInfo">Meta Info</span></th>
+                    <th><span data-translate="falconcmsApp.paper.section">Section</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="paper in vm.papers track by paper.id">
+                    <td><a ui-sref="paper-detail({id:paper.id})">{{paper.id}}</a></td>
+                    <td>{{paper.name}}</td>
+                    <td>{{paper.description}}</td>
+                    <td>{{paper.keywords}}</td>
+                    <td>{{paper.metaInfo}}</td>
+                    <td>
+                        <a ui-sref="section-detail({id:paper.sectionId})">{{paper.sectionId}}</a>
+                    </td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="paper-detail({id:paper.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-sm-down" data-translate="entity.action.view"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="paper.edit({id:paper.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-sm-down" data-translate="entity.action.edit"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="paper.delete({id:paper.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-sm-down" data-translate="entity.action.delete"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "section",
+            "otherEntityName": "section",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "keywords",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "metaInfo",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20170605142537",
+    "entityTableName": "paper",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl"
+}

@@ -1,0 +1,85 @@
+entity Conference {
+	name String required,
+    dateStart ZonedDateTime required,
+    dateStop ZonedDateTime,
+    callForPapers ZonedDateTime,
+    location String required
+}
+
+entity Section {
+    name String required,
+    description String
+}
+
+entity Paper {
+    name String required,
+    description String,
+    keywords String,
+    metaInfo String
+}
+
+entity Review {
+    mark Mark required
+}
+
+enum Mark {
+    STRONG_ACCEPT, ACCEPT, WEAK_ACCEPT, BORDERLINE_PAPER, WEAK_REJECT, REJECT, STRONG_REJECT
+}
+
+entity PaperAuthor {
+}
+
+entity Author {
+    name String required
+}
+
+entity Organizer {
+    name String required,
+    affiliation String,
+    email String,
+    web String
+}
+
+entity Participant {
+    name String required,
+    email String required,
+    role String required
+}
+
+relationship OneToOne {
+	Participant{section} to Section
+}
+
+relationship OneToOne {
+	Participant{user} to User,
+    Author{user} to User,
+    Organizer{user} to User
+}
+
+relationship OneToOne {
+	Review{reviewer} to Organizer,
+    Review{paper} to Paper
+}
+
+relationship ManyToOne {
+	Paper{section} to Section
+}
+
+relationship ManyToOne {
+	Organizer{conference} to Conference
+}
+
+relationship ManyToOne {
+	Section{conference} to Conference
+}
+
+relationship ManyToOne {
+	PaperAuthor{paper} to Paper,
+    PaperAuthor{author} to Author
+}
+
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
+

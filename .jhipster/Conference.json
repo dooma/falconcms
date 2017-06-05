@@ -1,0 +1,40 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "dateStart",
+            "fieldType": "ZonedDateTime",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "dateStop",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "callForPapers",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "location",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "changelogDate": "20170605142535",
+    "entityTableName": "conference",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl"
+}

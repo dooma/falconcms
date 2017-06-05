@@ -1,0 +1,31 @@
+
+<div>
+    <h2><span data-translate="falconcmsApp.review.detail.title">Review</span> {{vm.review.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="falconcmsApp.review.mark">Mark</span></dt>
+        <dd>
+            <span data-translate="{{'falconcmsApp.Mark.' + vm.review.mark}}">{{vm.review.mark}}</span>
+        </dd>
+        <dt><span data-translate="falconcmsApp.review.reviewer">Reviewer</span></dt>
+        <dd>
+            <a ui-sref="organizer-detail({id:vm.review.reviewerId})">{{vm.review.reviewerId}}</a>
+        </dd>
+        <dt><span data-translate="falconcmsApp.review.paper">Paper</span></dt>
+        <dd>
+            <a ui-sref="paper-detail({id:vm.review.paperId})">{{vm.review.paperId}}</a>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="review-detail.edit({id:vm.review.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

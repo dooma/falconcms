@@ -1,0 +1,39 @@
+
+<div>
+    <h2><span data-translate="falconcmsApp.participant.detail.title">Participant</span> {{vm.participant.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="falconcmsApp.participant.name">Name</span></dt>
+        <dd>
+            <span>{{vm.participant.name}}</span>
+        </dd>
+        <dt><span data-translate="falconcmsApp.participant.email">Email</span></dt>
+        <dd>
+            <span>{{vm.participant.email}}</span>
+        </dd>
+        <dt><span data-translate="falconcmsApp.participant.role">Role</span></dt>
+        <dd>
+            <span>{{vm.participant.role}}</span>
+        </dd>
+        <dt><span data-translate="falconcmsApp.participant.section">Section</span></dt>
+        <dd>
+            <a ui-sref="section-detail({id:vm.participant.sectionId})">{{vm.participant.sectionId}}</a>
+        </dd>
+        <dt><span data-translate="falconcmsApp.participant.user">User</span></dt>
+        <dd>
+            {{vm.participant.userId}}
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="participant-detail.edit({id:vm.participant.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

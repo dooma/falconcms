@@ -1,0 +1,23 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "paper",
+            "otherEntityName": "paper",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "author",
+            "otherEntityName": "author",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [],
+    "changelogDate": "20170605142539",
+    "entityTableName": "paper_author",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl"
+}

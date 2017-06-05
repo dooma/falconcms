@@ -1,0 +1,56 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()" show-validation>
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myReviewLabel" data-translate="falconcmsApp.review.home.createOrEditLabel">Create or edit a Review</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.review.id">
+            <label for="id" data-translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.review.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="falconcmsApp.review.mark" for="field_mark">Mark</label>
+            <select class="form-control" name="mark" ng-model="vm.review.mark" id="field_mark" required>
+                <option value="STRONG_ACCEPT" data-translate="falconcmsApp.Mark.STRONG_ACCEPT">STRONG_ACCEPT</option>
+                <option value="ACCEPT" data-translate="falconcmsApp.Mark.ACCEPT">ACCEPT</option>
+                <option value="WEAK_ACCEPT" data-translate="falconcmsApp.Mark.WEAK_ACCEPT">WEAK_ACCEPT</option>
+                <option value="BORDERLINE_PAPER" data-translate="falconcmsApp.Mark.BORDERLINE_PAPER">BORDERLINE_PAPER</option>
+                <option value="WEAK_REJECT" data-translate="falconcmsApp.Mark.WEAK_REJECT">WEAK_REJECT</option>
+                <option value="REJECT" data-translate="falconcmsApp.Mark.REJECT">REJECT</option>
+                <option value="STRONG_REJECT" data-translate="falconcmsApp.Mark.STRONG_REJECT">STRONG_REJECT</option>
+            </select>
+            <div ng-show="editForm.mark.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.mark.$error.required" data-translate="entity.validation.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label data-translate="falconcmsApp.review.reviewer" for="field_reviewer">Reviewer</label>
+            <select class="form-control" id="field_reviewer" name="reviewer" ng-model="vm.review.reviewerId" ng-options="organizer.id as organizer.id for organizer in vm.reviewers | orderBy:'id'">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label data-translate="falconcmsApp.review.paper" for="field_paper">Paper</label>
+            <select class="form-control" id="field_paper" name="paper" ng-model="vm.review.paperId" ng-options="paper.id as paper.id for paper in vm.papers | orderBy:'id'">
+                <option value=""></option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span data-translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span data-translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

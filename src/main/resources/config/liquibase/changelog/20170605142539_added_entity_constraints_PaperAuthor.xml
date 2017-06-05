@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+    <!--
+        Added the constraints for entity PaperAuthor.
+    -->
+    <changeSet id="20170605142539-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="paper_id"
+                                 baseTableName="paper_author"
+                                 constraintName="fk_paper_author_paper_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="paper"/>
+
+        <addForeignKeyConstraint baseColumnNames="author_id"
+                                 baseTableName="paper_author"
+                                 constraintName="fk_paper_author_author_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="author"/>
+
+    </changeSet>
+</databaseChangeLog>

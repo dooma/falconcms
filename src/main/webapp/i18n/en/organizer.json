@@ -1,0 +1,26 @@
+{
+    "falconcmsApp": {
+        "organizer" : {
+            "home": {
+                "title": "Organizers",
+                "createLabel": "Create a new Organizer",
+                "createOrEditLabel": "Create or edit a Organizer"
+            },
+            "created": "A new Organizer is created with identifier {{ param }}",
+            "updated": "A Organizer is updated with identifier {{ param }}",
+            "deleted": "A Organizer is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Organizer {{ id }}?"
+            },
+            "detail": {
+                "title": "Organizer"
+            },
+            "name": "Name",
+            "affiliation": "Affiliation",
+            "email": "Email",
+            "web": "Web",
+            "user": "User",
+            "conference": "Conference"
+        }
+    }
+}

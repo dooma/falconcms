@@ -1,0 +1,22 @@
+{
+    "falconcmsApp": {
+        "paperAuthor" : {
+            "home": {
+                "title": "Paper Authors",
+                "createLabel": "Create a new Paper Author",
+                "createOrEditLabel": "Create or edit a Paper Author"
+            },
+            "created": "A new Paper Author is created with identifier {{ param }}",
+            "updated": "A Paper Author is updated with identifier {{ param }}",
+            "deleted": "A Paper Author is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Paper Author {{ id }}?"
+            },
+            "detail": {
+                "title": "Paper Author"
+            },
+            "paper": "Paper",
+            "author": "Author"
+        }
+    }
+}

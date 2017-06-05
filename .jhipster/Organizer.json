@@ -1,0 +1,45 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "user",
+            "otherEntityName": "user",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "organizer"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "conference",
+            "otherEntityName": "conference",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "affiliation",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "email",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "web",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20170605142541",
+    "entityTableName": "organizer",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl"
+}

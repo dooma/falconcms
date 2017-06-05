@@ -1,0 +1,27 @@
+
+<div>
+    <h2><span data-translate="falconcmsApp.paperAuthor.detail.title">Paper Author</span> {{vm.paperAuthor.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="falconcmsApp.paperAuthor.paper">Paper</span></dt>
+        <dd>
+            <a ui-sref="paper-detail({id:vm.paperAuthor.paperId})">{{vm.paperAuthor.paperId}}</a>
+        </dd>
+        <dt><span data-translate="falconcmsApp.paperAuthor.author">Author</span></dt>
+        <dd>
+            <a ui-sref="author-detail({id:vm.paperAuthor.authorId})">{{vm.paperAuthor.authorId}}</a>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="paper-author-detail.edit({id:vm.paperAuthor.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

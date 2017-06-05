@@ -1,0 +1,39 @@
+
+<div>
+    <h2><span data-translate="falconcmsApp.paper.detail.title">Paper</span> {{vm.paper.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="falconcmsApp.paper.name">Name</span></dt>
+        <dd>
+            <span>{{vm.paper.name}}</span>
+        </dd>
+        <dt><span data-translate="falconcmsApp.paper.description">Description</span></dt>
+        <dd>
+            <span>{{vm.paper.description}}</span>
+        </dd>
+        <dt><span data-translate="falconcmsApp.paper.keywords">Keywords</span></dt>
+        <dd>
+            <span>{{vm.paper.keywords}}</span>
+        </dd>
+        <dt><span data-translate="falconcmsApp.paper.metaInfo">Meta Info</span></dt>
+        <dd>
+            <span>{{vm.paper.metaInfo}}</span>
+        </dd>
+        <dt><span data-translate="falconcmsApp.paper.section">Section</span></dt>
+        <dd>
+            <a ui-sref="section-detail({id:vm.paper.sectionId})">{{vm.paper.sectionId}}</a>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="paper-detail.edit({id:vm.paper.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>
