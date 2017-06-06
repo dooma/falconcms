@@ -13,7 +13,7 @@
         vm.authorities = [
             'ROLE_ADMIN',
             'ROLE_ORGANIZER',
-            'ROLE_ACTOR',
+            'ROLE_AUTHOR',
             'ROLE_PARTICIPANT'
         ];
         vm.clear = clear;
