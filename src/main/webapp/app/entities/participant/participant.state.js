@@ -13,7 +13,7 @@
             parent: 'entity',
             url: '/participant',
             data: {
-                authorities: ['ROLE_USER'],
+                authorities: ['ROLE_PARTICIPANT'],
                 pageTitle: 'falconcmsApp.participant.home.title'
             },
             views: {
@@ -35,7 +35,7 @@
             parent: 'participant',
             url: '/participant/{id}',
             data: {
-                authorities: ['ROLE_USER'],
+                authorities: ['ROLE_PARTICIPANT'],
                 pageTitle: 'falconcmsApp.participant.detail.title'
             },
             views: {
@@ -67,7 +67,7 @@
             parent: 'participant-detail',
             url: '/detail/edit',
             data: {
-                authorities: ['ROLE_USER']
+                authorities: ['ROLE_PARTICIPANT']
             },
             onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                 $uibModal.open({
@@ -92,7 +92,7 @@
             parent: 'participant',
             url: '/new',
             data: {
-                authorities: ['ROLE_USER']
+                authorities: ['ROLE_PARTICIPANT']
             },
             onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                 $uibModal.open({
@@ -122,7 +122,7 @@
             parent: 'participant',
             url: '/{id}/edit',
             data: {
-                authorities: ['ROLE_USER']
+                authorities: ['ROLE_PARTICIPANT']
             },
             onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                 $uibModal.open({
@@ -147,7 +147,7 @@
             parent: 'participant',
             url: '/{id}/delete',
             data: {
-                authorities: ['ROLE_USER']
+                authorities: ['ROLE_PARTICIPANT']
             },
             onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
                 $uibModal.open({

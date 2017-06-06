@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.falcon.cms</OriginalElement>
+  <nodes>
+    <node x="1369.0" y="3366.0">com.falcon.cms.service.impl</node>
+    <node x="1011.0" y="3992.0">com.falcon.cms.service.mapper</node>
+    <node x="754.0" y="3690.0">com.falcon.cms.security.SecurityUtilsUnitTest</node>
+    <node x="414.0" y="3992.0">com.falcon.cms.repository.AuthorRepository</node>
+    <node x="1630.0" y="1190.5">com.falcon.cms.repository.CustomSocialUsersConnectionRepositoryIntTest.TestFacebookConnectionFactory</node>
+    <node x="3045.0" y="410.0">com.falcon.cms.config.WebConfigurerTest.MockServletRegistration</node>
+    <node x="2504.0" y="3179.0">com.falcon.cms.service.AuthorService</node>
+    <node x="1269.0" y="2861.0">com.falcon.cms.domain.Author</node>
+    <node x="2020.0" y="3992.0">com.falcon.cms.service.dto</node>
+    <node x="2228.0" y="2464.0">com.falcon.cms.config.MetricsConfiguration</node>
+    <node x="1701.0" y="3992.0">com.falcon.cms.config.audit</node>
+    <node x="817.0" y="3992.0">com.falcon.cms.repository.PaperRepository</node>
+    <node x="1315.0" y="3440.0">com.falcon.cms.service.AuditEventService</node>
+    <node x="1809.0" y="2464.0">com.falcon.cms.service.MailService</node>
+    <node x="0.0" y="3992.0">com.falcon.cms.domain.enumeration</node>
+    <node x="2035.0" y="2015.0">com.falcon.cms.domain.Participant</node>
+    <node x="422.0" y="0.0">com.falcon.cms.repository.CustomSocialUsersConnectionRepositoryIntTest</node>
+    <node x="3285.0" y="3440.0">com.falcon.cms.domain.PersistentAuditEvent</node>
+    <node x="1901.0" y="1102.0">com.falcon.cms.repository.CustomSocialUsersConnectionRepositoryIntTest.TestTwitterApiAdapter</node>
+    <node x="130.0" y="1353.0">com.falcon.cms.domain.AbstractAuditingEntity</node>
+    <node x="1120.0" y="2464.0">com.falcon.cms.service.UserServiceIntTest</node>
+    <node x="1790.0" y="3179.0">com.falcon.cms.service.PaperService</node>
+    <node x="0.0" y="3179.0">com.falcon.cms.service.SectionService</node>
+    <node x="2673.0" y="3874.0">com.falcon.cms.repository.ConferenceRepository</node>
+    <node x="2007.0" y="1353.0">com.falcon.cms.repository.CustomSocialConnectionRepository</node>
+    <node x="675.0" y="3874.0">com.falcon.cms.ApplicationWebXml</node>
+    <node x="2522.0" y="3440.0">com.falcon.cms.config.DatabaseConfiguration</node>
+    <node x="0.0" y="2861.0">com.falcon.cms.domain.Review</node>
+    <node x="209.0" y="3992.0">com.falcon.cms.repository.SectionRepository</node>
+    <node x="2172.0" y="3874.0">com.falcon.cms.security.UserNotActivatedException</node>
+    <node x="2560.0" y="2015.0">com.falcon.cms.domain.Conference</node>
+    <node x="3572.0" y="3874.0">com.falcon.cms.repository.AuthorityRepository</node>
+    <node x="1552.0" y="3874.0">com.falcon.cms.config.DateTimeFormatConfiguration</node>
+    <node x="990.0" y="3440.0">com.falcon.cms.domain.Authority</node>
+    <node x="498.0" y="1190.5">com.falcon.cms.repository.CustomSocialUsersConnectionRepositoryIntTest.TestTwitterConnectionFactory</node>
+    <node x="3419.0" y="3690.0">com.falcon.cms.config.ThymeleafConfiguration</node>
+    <node x="3148.0" y="3690.0">com.falcon.cms.config.CloudDatabaseConfiguration</node>
+    <node x="276.0" y="3690.0">com.falcon.cms.FalconcmsApp</node>
+    <node x="616.0" y="3992.0">com.falcon.cms.repository.ReviewRepository</node>
+    <node x="1864.0" y="3992.0">com.falcon.cms.web.rest</node>
+    <node x="305.0" y="1179.5">com.falcon.cms.repository.CustomSocialUsersConnectionRepositoryIntTest.TestFacebookApi</node>
+    <node x="2781.0" y="3440.0">com.falcon.cms.repository.PersistenceAuditEventRepository</node>
+    <node x="46.0" y="2464.0">com.falcon.cms.config.LoggingConfiguration</node>
+    <node x="2436.0" y="3874.0">com.falcon.cms.repository.PaperAuthorRepository</node>
+    <node x="1426.0" y="3179.0">com.falcon.cms.service.OrganizerService</node>
+    <node x="2415.0" y="3690.0">com.falcon.cms.config.Constants</node>
+    <node x="1828.0" y="3690.0">com.falcon.cms.security.DomainUserDetailsService</node>
+    <node x="722.0000000000001" y="3179.0">com.falcon.cms.service.ParticipantService</node>
+    <node x="336.0" y="3179.0">com.falcon.cms.service.ConferenceService</node>
+    <node x="3282.0" y="2464.0">com.falcon.cms.config.WebConfigurer</node>
+    <node x="2619.0" y="1353.0">com.falcon.cms.security.PersistentTokenRememberMeServices</node>
+    <node x="2903.0" y="3874.0">com.falcon.cms.repository.ParticipantRepository</node>
+    <node x="551.0" y="3440.0">com.falcon.cms.repository.CustomAuditEventRepository</node>
+    <node x="1922.0" y="3440.0">com.falcon.cms.repository.CustomSocialUsersConnectionRepository</node>
+    <node x="2859.0" y="3179.0">com.falcon.cms.repository.SocialUserConnectionRepository</node>
+    <node x="1121.0" y="3690.0">com.falcon.cms.config.DefaultProfileUtil</node>
+    <node x="585.0" y="1353.0">com.falcon.cms.service.SocialServiceIntTest</node>
+    <node x="2817.0" y="2464.0">com.falcon.cms.domain.PersistentToken</node>
+    <node x="0.0" y="3874.0">com.falcon.cms.repository.PersistentTokenRepository</node>
+    <node x="1083.0" y="1168.0">com.falcon.cms.repository.CustomSocialUsersConnectionRepositoryIntTest.TestTwitterServiceProvider</node>
+    <node x="371.0" y="2464.0">com.falcon.cms.config.SecurityConfiguration</node>
+    <node x="890.0" y="2861.0">com.falcon.cms.service.SocialService</node>
+    <node x="3128.0" y="3874.0">com.falcon.cms.config.ApplicationProperties</node>
+    <node x="2698.0" y="3690.0">com.falcon.cms.config.CacheConfiguration</node>
+    <node x="445.0" y="2861.0">com.falcon.cms.domain.Section</node>
+    <node x="3353.0" y="3874.0">com.falcon.cms.repository.OrganizerRepository</node>
+    <node x="515.0" y="3690.0">com.falcon.cms.config.AsyncConfiguration</node>
+    <node x="2081.0" y="3690.0">com.falcon.cms.security.SecurityUtils</node>
+    <node x="1098.0" y="3179.0">com.falcon.cms.service.ReviewService</node>
+    <node x="0.0" y="1543.0">com.falcon.cms.domain.User</node>
+    <node x="2656.0" y="1697.0">com.falcon.cms.security.PersistentTokenRememberMeServices.UpgradedRememberMeToken</node>
+    <node x="0.0" y="3690.0">com.falcon.cms.security.AuthoritiesConstants</node>
+    <node x="1905.0" y="3874.0">com.falcon.cms.security.SpringSecurityAuditorAware</node>
+    <node x="1408.0" y="1353.0">com.falcon.cms.service.UserService</node>
+    <node x="2173.0" y="3992.0">com.falcon.cms.service.util</node>
+    <node x="1417.0" y="1168.5">com.falcon.cms.repository.CustomSocialUsersConnectionRepositoryIntTest.TestTwitterApi</node>
+    <node x="383.0" y="3874.0">com.falcon.cms.config.WebConfigurerTestController</node>
+    <node x="2256.0" y="432.0">com.falcon.cms.config.WebConfigurerTest.MockFilterRegistration</node>
+    <node x="1367.0" y="3992.0">com.falcon.cms.security.social</node>
+    <node x="0.0" y="2676.0">com.falcon.cms.config.LoggingConfiguration.LogbackLoggerContextListener</node>
+    <node x="1483.0" y="3690.0">com.falcon.cms.config.LocaleConfiguration</node>
+    <node x="1534.0" y="3992.0">com.falcon.cms.config.social</node>
+    <node x="0.0" y="2015.0">com.falcon.cms.repository.CustomAuditEventRepositoryIntTest</node>
+    <node x="753.0" y="1102.0">com.falcon.cms.repository.CustomSocialUsersConnectionRepositoryIntTest.TestFacebookApiAdapter</node>
+    <node x="2736.0" y="0.0">com.falcon.cms.config.WebConfigurerTest</node>
+    <node x="847.0" y="2015.0">com.falcon.cms.domain.SocialUserConnection</node>
+    <node x="0.0" y="3440.0">com.falcon.cms.repository.UserRepository</node>
+    <node x="1392.0" y="2015.0">com.falcon.cms.service.MailServiceIntTest</node>
+    <node x="2104.0" y="3179.0">com.falcon.cms.service.PaperAuthorService</node>
+    <node x="1674.0" y="2861.0">com.falcon.cms.domain.PaperAuthor</node>
+    <node x="3018.0" y="1353.0">com.falcon.cms.domain.Organizer</node>
+    <node x="1189.0" y="3992.0">com.falcon.cms.aop.logging</node>
+    <node x="3085.0" y="2015.0">com.falcon.cms.domain.Paper</node>
+    <node x="0.0" y="1168.0">com.falcon.cms.repository.CustomSocialUsersConnectionRepositoryIntTest.TestFacebookServiceProvider</node>
+    <node x="1165.0" y="3874.0">com.falcon.cms.config.LoggingAspectConfiguration</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.falcon.cms.repository.CustomSocialUsersConnectionRepositoryIntTest.TestFacebookApi" target="com.falcon.cms.repository.CustomSocialUsersConnectionRepositoryIntTest">
+      <point x="0.0" y="-25.5" />
+      <point x="391.5" y="1072.0" />
+      <point x="666.5" y="1072.0" />
+      <point x="-407.5" y="521.0" />
+    </edge>
+    <edge source="com.falcon.cms.service.impl" target="com.falcon.cms.service.AuthorService">
+      <point x="49.0" y="-14.5" />
+      <point x="1474.0" y="3346.0" />
+      <point x="2659.0" y="3346.0" />
+      <point x="0.0" y="58.5" />
+    </edge>
+    <edge source="com.falcon.cms.config.WebConfigurerTest.MockFilterRegistration" target="com.falcon.cms.config.WebConfigurerTest">
+      <point x="0.0" y="-136.0" />
+      <point x="2640.5" y="385.0" />
+      <point x="2870.25" y="385.0" />
+      <point x="-134.25" y="180.0" />
+    </edge>
+    <edge source="com.falcon.cms.repository.CustomSocialUsersConnectionRepositoryIntTest.TestTwitterServiceProvider" target="com.falcon.cms.repository.CustomSocialUsersConnectionRepositoryIntTest">
+      <point x="0.0" y="-37.0" />
+      <point x="1240.0" y="1082.0" />
+      <point x="1155.5" y="1082.0" />
+      <point x="81.5" y="521.0" />
+    </edge>
+    <edge source="com.falcon.cms.repository.CustomSocialUsersConnectionRepositoryIntTest.TestTwitterApiAdapter" target="com.falcon.cms.repository.CustomSocialUsersConnectionRepositoryIntTest">
+      <point x="0.0" y="-103.0" />
+      <point x="2056.0" y="1062.0" />
+      <point x="1644.5" y="1062.0" />
+      <point x="570.5" y="521.0" />
+    </edge>
+    <edge source="com.falcon.cms.service.impl" target="com.falcon.cms.service.ParticipantService">
+      <point x="-21.0" y="-14.5" />
+      <point x="1404.0" y="3326.0" />
+      <point x="900.0000000000001" y="3326.0" />
+      <point x="0.0" y="58.5" />
+    </edge>
+    <edge source="com.falcon.cms.service.impl" target="com.falcon.cms.service.PaperService">
+      <point x="21.0" y="-14.5" />
+      <point x="1446.0" y="3326.0" />
+      <point x="1937.0" y="3326.0" />
+      <point x="0.0" y="58.5" />
+    </edge>
+    <edge source="com.falcon.cms.repository.CustomSocialUsersConnectionRepositoryIntTest.TestFacebookApiAdapter" target="com.falcon.cms.repository.CustomSocialUsersConnectionRepositoryIntTest">
+      <point x="0.0" y="-103.0" />
+      <point x="908.0" y="1082.0" />
+      <point x="992.5" y="1082.0" />
+      <point x="-81.5" y="521.0" />
+    </edge>
+    <edge source="com.falcon.cms.service.impl" target="com.falcon.cms.service.SectionService">
+      <point x="-49.0" y="-14.5" />
+      <point x="1376.0" y="3346.0" />
+      <point x="158.0" y="3346.0" />
+      <point x="0.0" y="58.5" />
+    </edge>
+    <edge source="com.falcon.cms.repository.CustomSocialUsersConnectionRepositoryIntTest.TestTwitterApi" target="com.falcon.cms.repository.CustomSocialUsersConnectionRepositoryIntTest">
+      <point x="0.0" y="-36.5" />
+      <point x="1513.5" y="1082.0" />
+      <point x="1318.5" y="1082.0" />
+      <point x="244.5" y="521.0" />
+    </edge>
+    <edge source="com.falcon.cms.service.impl" target="com.falcon.cms.service.PaperAuthorService">
+      <point x="35.0" y="-14.5" />
+      <point x="1460.0" y="3336.0" />
+      <point x="2294.0" y="3336.0" />
+      <point x="0.0" y="58.5" />
+    </edge>
+    <edge source="com.falcon.cms.repository.CustomSocialUsersConnectionRepositoryIntTest.TestFacebookConnectionFactory" target="com.falcon.cms.repository.CustomSocialUsersConnectionRepositoryIntTest">
+      <point x="0.0" y="-14.5" />
+      <point x="1755.5" y="1072.0" />
+      <point x="1481.5" y="1072.0" />
+      <point x="407.5" y="521.0" />
+    </edge>
+    <edge source="com.falcon.cms.service.impl" target="com.falcon.cms.service.ConferenceService">
+      <point x="-35.0" y="-14.5" />
+      <point x="1390.0" y="3336.0" />
+      <point x="519.0" y="3336.0" />
+      <point x="0.0" y="58.5" />
+    </edge>
+    <edge source="com.falcon.cms.service.impl" target="com.falcon.cms.service.ReviewService">
+      <point x="-7.0" y="-14.5" />
+      <point x="1418.0" y="3316.0" />
+      <point x="1252.0" y="3316.0" />
+      <point x="0.0" y="58.5" />
+    </edge>
+    <edge source="com.falcon.cms.domain.User" target="com.falcon.cms.domain.AbstractAuditingEntity">
+      <point x="0.0" y="-213.5" />
+      <point x="0.0" y="70.0" />
+    </edge>
+    <edge source="com.falcon.cms.repository.CustomSocialUsersConnectionRepositoryIntTest.TestFacebookServiceProvider" target="com.falcon.cms.repository.CustomSocialUsersConnectionRepositoryIntTest">
+      <point x="0.0" y="-37.0" />
+      <point x="142.5" y="1062.0" />
+      <point x="503.5" y="1062.0" />
+      <point x="-570.5" y="521.0" />
+    </edge>
+    <edge source="com.falcon.cms.config.WebConfigurerTest.MockServletRegistration" target="com.falcon.cms.config.WebConfigurerTest">
+      <point x="0.0" y="-158.0" />
+      <point x="3368.5" y="385.0" />
+      <point x="3138.75" y="385.0" />
+      <point x="134.25" y="180.0" />
+    </edge>
+    <edge source="com.falcon.cms.config.LoggingConfiguration.LogbackLoggerContextListener" target="com.falcon.cms.config.LoggingConfiguration">
+      <point x="0.0" y="-70.0" />
+      <point x="0.0" y="81.0" />
+    </edge>
+    <edge source="com.falcon.cms.repository.CustomSocialUsersConnectionRepositoryIntTest.TestTwitterConnectionFactory" target="com.falcon.cms.repository.CustomSocialUsersConnectionRepositoryIntTest">
+      <point x="0.0" y="-14.5" />
+      <point x="615.5" y="1082.0" />
+      <point x="829.5" y="1082.0" />
+      <point x="-244.5" y="521.0" />
+    </edge>
+    <edge source="com.falcon.cms.security.PersistentTokenRememberMeServices.UpgradedRememberMeToken" target="com.falcon.cms.security.PersistentTokenRememberMeServices">
+      <point x="0.0" y="-70.0" />
+      <point x="0.0" y="147.0" />
+    </edge>
+    <edge source="com.falcon.cms.service.impl" target="com.falcon.cms.service.OrganizerService">
+      <point x="7.0" y="-14.5" />
+      <point x="1432.0" y="3316.0" />
+      <point x="1598.0" y="3316.0" />
+      <point x="0.0" y="58.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.30000000000000016" x="181.99999999999864" y="284.3333333333326" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
